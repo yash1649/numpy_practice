@@ -1,9 +1,17 @@
 import numpy as np
-from numpy.ma.core import identity
+
+#restrictions
+#1. all elements must be of same type
+#2. cant change size of the array
+#3. data must be rectangular (same number of columns)
 
 #creating array from a list
 ages = np.array([4,5,26,7,2])
 print(ages)
+
+#random content
+arrempt = np.empty((3,3))
+print(arrempt)
 
 #default values
 #zeros
@@ -25,3 +33,6 @@ print(arr3)
 # creating identity matrices
 identity_matrix = np.eye(5)
 print(identity_matrix)
+
+#linearly spaced arrays
+print(np.linspace(0,20,5))
